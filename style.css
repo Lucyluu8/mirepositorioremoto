@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    padding: 0;
+   
+}
+
+
+#encabezado{
+    background-color: #000000;
+    margin: 0%;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#listas{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+    
+}
+.lista{
+    margin: 50px;
+    
+}
+a:hover{
+    color: #fca311;
+    transition: 0.5s;
+    font-size: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: #e5e5e5;
+    font-weight: 900;
+
+
+}
+#barra{
+    
+    margin: 0 auto;
+ 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+}
+
+.boton{
+    color: white;
+    border:none;
+    background: none;
+    display: none;
+   
+
+    
+}
+
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    align-self: center;
+}
+
+.img{
+   
+    width: 150px;
+}
+
+h3{
+    color: beige;
+    margin: 5px;
+
+}
+
+p{
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #14213d;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.greeting {
+    
+    text-align: center;
+
+}
+.titulo{
+    display: none;
+}
+
+
+
+    
+
+
+
+
+
+
+@media(max-width: 800px){
+
+    #encabezado{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .titulo{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        
+    }
+    #listas{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        margin: 5px 0px;
+       
+    }
+    .barra{
+        width: 300px;
+        height: 100%;
+        background-color:rgb(61, 56, 56);
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+
+        right: 100%;
+
+        transition: left 0.3s;
+    }
+
+    a{
+        font-size: 15px;
+        color: gray;
+        
+        margin: 0;
+        padding: 0;
+
+    }
+    li{
+        margin: 5px;
+    }
+    a:hover{
+        font-size: 15px;
+    }
+
+    .boton{
+        color: white;
+        border:none;
+        background: none;
+        display: flex;
+        align-self: flex-end;
+        font-family: sans-serif;
+        margin: 15px;
+    }
+
+    .barra_visible{
+        left: 0;
+    
+    }
+    
+    main{
+        height: 700px;
+    }
+
+    
+   
+
+}
+
+  
